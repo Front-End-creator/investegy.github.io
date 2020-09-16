@@ -1,0 +1,282 @@
+body {
+	margin: 0;
+    padding: 0;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
+}
+
+.navbackground{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: -100px;
+    height: 80px;
+    background-color: white;
+}
+
+.animation{
+    animation: animate 1s forwards ease-in-out;
+}
+
+.removeanimation{
+    animation: removeanimate 1s forwards ease-in-out;
+}
+
+@keyframes animate {
+    from {top:-80px;}
+    to {top:0px;}
+}
+
+@keyframes removeanimate {
+    from {top:0px;}
+    to {top:-80px;}
+}
+
+.navigator{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+
+#logo{
+    text-align: center;
+    width: 30%;
+}
+
+#navlist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    margin: 0;
+    padding: 10px 80px;
+}
+
+#navlist li{
+    float: left;
+}
+
+
+#navlist li a {
+    color: #497abd;
+    font-size: 15px;
+    transition: 0.5s;
+    text-decoration:none;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#navlist li a:hover{
+    color: #8bbbff;
+    cursor: pointer;
+}
+
+#navlist li a:after {
+    background-color:  #8bbbff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+#navlist li a:hover:after,
+#navlist li a:focus:after {
+    width: 100%;
+}
+
+#titleblock{
+    background-image: url(../image/mountain.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+
+#consultation{
+    border-style: solid;
+    border-color:  #497abd;
+    background-color: transparent;
+    color:  #497abd;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+#consultation:hover{
+    color: #8bbbff;
+    border-color:  #8bbbff;
+    cursor: pointer;
+}
+
+#thesis{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: relative;
+    top: 250px;
+    margin: 0;
+    max-height: 330px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#thesis h4{
+    color: white;
+}
+
+#thesis h1{
+    color: white;
+    font-size: 60px;
+}
+
+#thesis li h2{
+    color: white;
+    background-color: #497abd;
+    padding: 40px 50px;
+    margin: 0;
+}
+
+
+#presentation, #portfolio{
+    border-style: solid;
+    border-color: #497abd;
+    background-color: #497abd;
+    color:  white;
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#presentation:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form{
+    background-color: white;
+    padding: 2.5%;
+}
+
+.forminput{
+    padding: 10px;
+    margin: 15px 7%;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    width: 80%;
+}
+
+.requestinput{
+    padding: 10px 10px 50px 10px;
+    resize: vertical;
+    margin: 15px 7%;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    width: 80%;
+}
+
+
+.formbutt{
+    padding: 30px;
+    width: calc(80% + 20px);
+    margin: 20px 7%;
+    border: none;
+    background-color: #497abd;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.formbutt:hover{
+    cursor: pointer;
+    background-color: #8bbbff;
+}
+
+#orderconsultation{
+    transform: translateY(-90px);
+}
+
+#aboutus{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutinfo{
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.aboutinfo h1 {
+    font-size: 2.3em;
+}
+.aboutinfo h3{
+    font-size: 1.5em
+}
+
+
+.aboutinfo ul{
+    padding: 0 0 0 15px;
+}
+
+.aboutinfo ul li {
+    opacity: 0.4;
+    font-size: 1.1em;
+}
+
+.photo img{
+    width: 65%;
+    height: auto;
+    margin-top: 65px;
+}
+
+.photo{
+    text-align: center;
+}
+
+
+#portfolio:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: #497abd;
+}
+
+#attraction{
+    width: 100%;
+    background-color: #497abd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#attraction p{
+    color: white;
+    background-color: transparent;
+    font-size: 26px;
+    margin: 15px 10%;
+}
+
+#attraction button{
+    border-style: solid;
+    border-color:  white;
+    background-color: transparent;
+    color:  white;
+    font-size: 22px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 15px 10%;
+    transition: 0.5s;
+}
+
+#attraction button:hover{
+    background-color: white;
+    color:  #497abd;
+    cursor: pointer;
+}
+
