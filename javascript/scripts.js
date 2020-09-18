@@ -1,11 +1,10 @@
 $(window).scroll(function(){
-    if ( $(window).scrollTop() > 100) {
-        $('.navbackground').addClass('animation');
-        $('.navbackground').removeClass('removeanimation');
+    $('.navbackground').addClass('animation');
+    if ( $(window).scrollTop() > 0) {
+        $('.navbackground').addClass('animation').removeClass('removeanimation');
     } else {
-        $('.navbackground').addClass('removeanimation');
-        $('.navbackground').removeClass('animation');
-    }
+            $('.navbackground').removeClass('animation').addClass('removeanimation'); 
+}
 });
 
 $(document).ready(function(){

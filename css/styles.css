@@ -169,6 +169,8 @@ body {
     border: none;
     background-color: rgb(245, 245, 245);
     width: 80%;
+    outline: 0;
+    transition: 0.5s;
 }
 
 .requestinput{
@@ -178,8 +180,8 @@ body {
     border: none;
     background-color: rgb(245, 245, 245);
     width: 80%;
+    outline: 0;
 }
-
 
 .formbutt{
     padding: 30px;
@@ -246,7 +248,7 @@ body {
     color: #497abd;
 }
 
-#attraction{
+.attraction{
     width: 100%;
     background-color: #497abd;
     display: flex;
@@ -255,28 +257,89 @@ body {
     margin-top: 60px;
 }
 
-#attraction p{
+.attraction p{
     color: white;
     background-color: transparent;
     font-size: 26px;
-    margin: 15px 10%;
+    margin: 20px 10%;
 }
 
-#attraction button{
+.attraction button{
     border-style: solid;
     border-color:  white;
     background-color: transparent;
     color:  white;
     font-size: 22px;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 30px;
-    margin: 15px 10%;
+    margin: 20px 10%;
     transition: 0.5s;
 }
 
-#attraction button:hover{
+.attraction button:hover{
     background-color: white;
     color:  #497abd;
     cursor: pointer;
+}
+
+#result{
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    margin: 0;
+    text-align:center;
+    color: white;
+    max-height: 750px;
+}
+
+#result h3{
+    margin:auto;
+    font-size: 26px;
+    width: 50%;
+    padding-top: 120px;
+}
+
+
+#result h2{
+    margin:auto;
+    font-size: 32px;
+    width: 40%;
+    padding-top: 40px;
+}
+
+#resultinfo{
+    width: 40%;
+    margin:auto;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+#resultlist{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+#resultlist li{
+    width: 30%;
+    margin: 30px;
+    padding: 40px 10px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+#resultlist li .num{
+    font-size: 90px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+#resultlist li .text{
+    width: 70%;
+    margin: auto;
+    padding-bottom:40px;
+    font-size: 18px;
 }
 
