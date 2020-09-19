@@ -11,16 +11,26 @@
   <title>Investegy – Monetization of business, investors and experts</title>
 </head>
 <body>
+  <div id = "backlayer">
+    <div id = "consultationblock">
+      <h2>Order a consultation</h2>
+      <input id = "name2" class = "forminput" type = "text" placeholder="Name"><br>
+      <input id = "email2" class = "forminput" type = "email" placeholder="Email"><br>
+      <textarea id = "request2" class = "requestinput" type = "text" placeholder="Request"></textarea><br>
+      <input id = "submit_btn2" class = "formbutt" type = "submit" value ="Send">
+    </div>
+    <div id = "helperlayer"></div>
+  </div>
   <div class = "navbackground"></div>
   <div class="navigator">
           <ul id = "navlist">
             <li id="logo">
-              <img src = "image/logo1.png"> 
+              <img src = "image/logo.png"> 
             </li>
               <li><a href = "#titleblock">Home Page</a></li>
               <li><a href = "#aboutus">About Us</a></li>
               <li><a href = "#result">Our Results</a></li>
-              <li><a href = "#">Contacts</a></li>
+              <li><a href = "#contacts">Contacts</a></li>
               <li><button id = "consultation">consultation</button></li>
           </ul>
   </div>
@@ -34,10 +44,10 @@
     <li id = "orderconsultation">
       <h2>Order a consultation</h2>
       <div class = "form">
-        <input class = "forminput" type = "text" placeholder="Name"><br>
-        <input class = "forminput" type = "email" placeholder="Email"><br>
-        <textarea class = "requestinput" type = "text" placeholder="Request"></textarea><br>
-        <input class = "formbutt" type = "submit" value ="Send">
+        <input id = "name" class = "forminput" type = "text" placeholder="Name"><br>
+        <input id = "email" class = "forminput" type = "email" placeholder="Email"><br>
+        <textarea id = "request" class = "requestinput" type = "text" placeholder="Request"></textarea><br>
+        <input id = "submit_btn" class = "formbutt" type = "submit" value ="Send">
       </div>
     </li>
     </ul>
@@ -85,6 +95,13 @@
     <p>Doing the Right Thing, at the Right Time!</p>
     <button>Get Started</button>
   </div>
+  <div id = "contacts">
+      <img src = "image/logo_white.png" alt = "logo">
+      <a target = "_blank" href = "https://www.facebook.com/yaroslav.pylypchuk.1"><img style = "width: 250px;" src = "image/Facebook-Logo.png" alt = "facebook"></a>
+  </div>
+  <footer>
+    © 2020 Investegy. All Rights Reserved.
+  </footer>
 </body>
 <script src="javascript/scripts.js"></script>
 </html>

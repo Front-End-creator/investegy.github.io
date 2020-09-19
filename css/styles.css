@@ -4,6 +4,10 @@ body {
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
 }
 
+button{
+    outline:none;
+}
+
 .navbackground{
     position: fixed;
     width: 100%;
@@ -134,7 +138,7 @@ body {
     font-size: 60px;
 }
 
-#thesis li h2{
+#thesis li h2, #consultationblock h2{
     color: white;
     background-color: #497abd;
     padding: 40px 50px;
@@ -343,3 +347,53 @@ body {
     font-size: 18px;
 }
 
+
+#contacts{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+}
+
+#contacts a img{
+    transition: 0.5s;
+}
+
+#contacts a:hover img{
+    filter: grayscale(100%) brightness(3); 
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#backlayer{
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#helperlayer{
+    width: 100%;
+    height: 100%;
+}
+
+
+#consultationblock{
+    position: absolute;
+    width: 40%;
+    margin: auto;
+    top: 18%;
+    left: 30%;
+    background-color: white;
+    z-index: 30;
+}
