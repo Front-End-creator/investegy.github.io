@@ -25,8 +25,8 @@ $(document).ready(function(){
 });
 
 
-$('#submit_btn').on('click', sendForm);
-function sendForm() {
+$('#submit_btn').on('click', sendForm2);
+function sendForm2() {
     let name = $('#name').val();
     let email = $('#email').val();
     let request = $('#request').val();
@@ -42,6 +42,7 @@ function sendForm() {
     $('#email').val("");
     $('#request').val("");
 };
+
 
 $('#submit_btn2').on('click', sendForm);
 function sendForm() {
