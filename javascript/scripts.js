@@ -8,11 +8,14 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
-    $("#navlist li").on("click","a", function (event) {
+    $("#navlist li, #menu li").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
+    });
+    $("#menu li a, #menu li button").on("click", function () {
+        $("#checkbox").prop("checked", false);
     });
     $("#consultation, .attraction button").on("click", function () {
         $('#backlayer').show();

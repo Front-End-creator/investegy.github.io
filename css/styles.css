@@ -2,6 +2,7 @@ body {
 	margin: 0;
     padding: 0;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
+    outline: red 1px;
 }
 
 button{
@@ -72,12 +73,12 @@ button{
     text-transform: uppercase;
 }
 
-#navlist li a:hover{
+#navlist li a:hover, #menu li a:hover{
     color: #8bbbff;
     cursor: pointer;
 }
 
-#navlist li a:after {
+#navlist li a:after{
     background-color:  #8bbbff;
     display: block;
     content: "";
@@ -87,8 +88,7 @@ button{
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
 }
-#navlist li a:hover:after,
-#navlist li a:focus:after {
+#navlist li a:hover:after{
     width: 100%;
 }
 
@@ -397,3 +397,275 @@ footer{
     background-color: white;
     z-index: 30;
 }
+
+#media{
+    display: none;
+}
+
+
+@media (max-width: 1023px){
+    
+    
+    #media{
+        display: inline;
+    }
+   
+   
+   
+    .LogoType{
+       width: 50%;
+   }
+   
+    .navigator{
+        display: none;
+    }
+   
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+   
+    .link
+    {
+      text-decoration: none;
+      color: #497abd;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+    }
+    
+    .link:hover
+    {
+      color: tomato;
+    }
+
+    #consultation{
+        font-size: 22px;
+    }
+    
+    #menuToggle img{
+        width: 50%;
+        height: auto;
+        position: fixed;
+        z-index: 41;
+        top: 20px;
+        left: 20px;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 28px;
+      position: fixed;
+      top: 23px;
+      right: 40px;
+      margin-left: 40px;
+      
+      cursor: pointer;
+      
+      opacity: 0;
+      z-index: 42;
+      
+      -webkit-touch-callout: none;
+    }
+   
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      position: fixed;
+      background:  #497abd;
+      border-radius: 3px;
+      top: 38px;
+      right: 40px;
+      z-index: 41;
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+   
+    #menuToggle span:first-of-type{
+        top: 29px;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+      top: 47px;
+    }
+   
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background:  #497abd;
+    }
+   
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+   
+   
+    #menu
+    {
+      position: fixed;
+      width: 100%;
+      margin: -100px 0 0 0;
+      padding-bottom: 50px;
+      padding-top: 80px;
+      padding-left: 0;
+      background: #ffffff;
+      list-style-type: none;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      z-index: 40;
+      top: 80px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+   
+   .List
+    {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 22px;
+    }
+   
+    #LogoList
+    {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 22px;
+    }
+   
+    .FirstList
+    {
+      text-align: center;
+      padding-top: 20px;
+      
+      font-size: 22px;
+    }
+   
+    .list
+    {
+      text-align: center;
+      padding: 0;
+    }
+   
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+   
+    #consultationblock{
+        width: 80%;
+        left: 10%;
+    }
+
+    #intro{
+        width: 100%;
+    }
+
+    #thesis h1{
+        font-size: 26px;
+        margin: 40px 0;
+    }
+
+    #presentation, #portfolio{
+        font-size: 18px;
+    }
+    
+    #aboutus{
+        justify-content: center;
+    }
+
+    .aboutinfo{
+        width: 90%;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+    #aboutus{
+        flex-wrap: wrap;
+    }
+
+    .photo{
+        width: 95%;
+    
+    }
+    
+    .photo img{
+        width: 100%;
+        height: auto;
+        margin-top: 65px;
+    }
+
+    #result {
+        max-height: 1700px;
+    }
+
+    #result h3{
+        width: 90%;
+    }
+    
+    
+    #result h2{
+        width: 80%;
+    }
+    
+    #resultinfo{
+        width: 80%;
+
+    }
+
+    #resultlist{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #resultlist li{
+        width: 90%;
+    }
+    .attraction{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .attraction p{
+        font-size: 16px;
+    }
+    
+    .attraction button{
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #contacts{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #contacts a img{
+        margin-top: 50px;
+    }
+
+}   
