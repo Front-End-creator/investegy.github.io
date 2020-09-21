@@ -418,7 +418,7 @@ footer{
 }
 
 
-@media (max-width: 1023px){
+@media (max-width: 1060px){
     
     
     #media{
@@ -603,9 +603,20 @@ footer{
         width: 100%;
     }
 
-    #thesis h1{
-        font-size: 26px;
-        margin: 40px 0;
+    #titleblock{
+        height: 1200px;
+    }
+
+    #thesis{
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: none;
+        top: 150px;
+    }
+
+    #orderconsultation{
+        transform: translateY(90px);
+        width: 90%;
     }
 
     #presentation, #portfolio{
@@ -679,7 +690,7 @@ footer{
     }
 
     #portfolio_mob{
-        width: calc(100% - 3.2px);
+        width: calc(100% - 2.4px);
         display: block;
     }
 
@@ -709,7 +720,7 @@ footer{
 @media (max-width: 1500px) and (min-width: 1022px){
     #portfolio_mob{
         display: block;
-        width: calc(65% - 3.2px);
+        width: calc(65% - 2.4px);
     }
 
     #portfolio{
