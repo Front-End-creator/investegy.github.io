@@ -191,14 +191,12 @@ button{
     padding: 30px;
     width: calc(80% + 20px);
     margin: 20px 7%;
+    border-radius: 0;
+    border-width: 0;
     background-color: #497abd;
     color: white;
     font-size: 20px;
     transition: 0.5s;
-    border-style: solid;
-    border-color:  #497abd;
-    background-color: transparent;
-    border-radius: 15px;
 }
 
 .formbutt:hover{
