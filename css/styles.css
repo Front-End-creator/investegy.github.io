@@ -191,10 +191,8 @@ button{
     padding: 30px;
     width: calc(80% + 20px);
     margin: 20px 7%;
-    border-style: solid;
-    border-color:#497abd;;
+    border: none;
     background-color: #497abd;
-    border-radius: 0;
     color: white;
     font-size: 20px;
     transition: 0.5s;
