@@ -714,10 +714,18 @@ footer{
     #result {
         max-height: 1700px;
     }
+    #thesis{
+        padding: 20px;
+    }
+
+    #orderconsultation{
+        transform: translateY(90px);
+        width: 100%;
+    }
 
 }
 
-@media (max-width: 1500px) and (min-width: 1022px){
+@media (max-width: 1500px) and (min-width: 1060px){
     #portfolio_mob{
         display: block;
         width: calc(65% - 2.4px);
