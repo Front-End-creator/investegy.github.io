@@ -204,6 +204,24 @@ button{
     background-color: #8bbbff;
 }
 
+.text-error, .text-success, .text-error2, .text-success2{
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 0;
+    display: none;
+}
+
+.text-success, .text-success2{
+    color: #8bbbff;
+}
+
+.text-error, .text-error2{
+    color: red;
+}
+
 #orderconsultation{
     transform: translateY(-90px);
 }
