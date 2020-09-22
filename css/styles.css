@@ -736,6 +736,10 @@ footer{
     #thesis{
         padding: 20px;
     }
+	
+    #thesis h1{
+        font-size: 40px;
+    }
 
     #orderconsultation{
         transform: translateY(90px);
