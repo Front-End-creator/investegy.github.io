@@ -8,7 +8,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
-    $("#navlist li, #menu li").on("click","a", function (event) {
+    $("#navlist li, #menu li").on("click",".ref, .link", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
