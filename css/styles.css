@@ -665,6 +665,10 @@ footer{
         font-size: 40px;
     }
 
+    #thesis li h2, #consultationblock h2{
+        padding: 40px 0;
+    }
+
     .listinfo{
         width: 100%;
     }
