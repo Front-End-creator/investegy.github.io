@@ -661,6 +661,11 @@ footer{
         top: 150px;
     }
 
+    #thesis h1{
+        color: white;
+        font-size: 50px;
+    }
+
     .listinfo{
         width: 100%;
     }
