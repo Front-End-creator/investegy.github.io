@@ -17,14 +17,6 @@ $(document).ready(function(){
     $("#menu li a, #menu li #consultation").on("click", function () {
         $("#checkbox").prop("checked", false);
     });
-    $(".mainlink").on("click", function () {
-        $(".langbutton").css("display", "flex");
-    });
-    $(".translate").on("click", function () {
-        var txt =  $(this).text();
-        $(".langbutton").css("display", "none");
-        $(".mainlink").text(txt);
-    });
     $("#consultation, .attraction button").on("click", function () {
         $('#backlayer').show();
         $('body').css("overflow", "hidden");
