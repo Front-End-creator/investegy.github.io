@@ -504,11 +504,11 @@ footer{
     }
     
     #menuToggle img{
-        width: 200px;
+        width: 100px;
         height: auto;
         position: fixed;
         z-index: 41;
-        top: 20px;
+        top: 15px;
         left: 20px;
     }
 
