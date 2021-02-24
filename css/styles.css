@@ -153,6 +153,7 @@ button{
 
 #thesis h4{
     color: white;
+    font-size: 30px;
 }
 
 #thesis h1{
@@ -741,11 +742,11 @@ footer{
     }
 
     .attraction p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .attraction button{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #portfolio_mob{
