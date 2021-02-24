@@ -154,11 +154,13 @@ button{
 #thesis h4{
     color: white;
     font-size: 30px;
+    margin: 0;
 }
 
 #thesis h1{
     color: white;
     font-size: 60px;
+    margin-bottom: 60px;
 }
 
 #thesis li h2, #consultationblock h2{
@@ -175,7 +177,7 @@ button{
     border-color: #497abd;
     background-color: #497abd;
     color:  white;
-    font-size: 25px;
+    font-size: 28px;
     padding: 10px 15px;
     transition: 0.5s;
     text-decoration: none;
@@ -680,7 +682,7 @@ footer{
     }
 
     #presentation, #portfolio{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     #aboutus{
