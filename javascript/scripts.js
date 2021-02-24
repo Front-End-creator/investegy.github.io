@@ -180,6 +180,16 @@ var arrPlace = {
     }
 }
 
+var arrFile = {
+    'en':{
+        'downloadportfolio': 'files/Yaroslav Pylypchuk CV-1-3-EN.pdf',
+    },
+    'ua':{
+        'downloadportfolio': 'files/Yaroslav Pylypchuk CV-1-3-UA.pdf',
+    }
+}
+
+
 
 
 $(function() {
@@ -190,6 +200,9 @@ $(function() {
         });
         $('.placehold').each(function(index, element) {
             $(this).attr('placeholder', arrPlace[lang][$(this).attr('key')]);
+        });
+        $('.langlink').each(function(index, element) {
+            $(this).attr('href', arrFile[lang][$(this).attr('key')]);
         });
         $('.brlang').each(function(index, element) {
             $(this).html(arrLang[lang]['secondinfo1'] + "<br>" + arrLang[lang]['secondinfo2']);
