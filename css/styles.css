@@ -518,8 +518,8 @@ footer{
     #helplist{
         position: fixed;
         list-style: none;
-        right: 85px;
-        top: 30px;
+        right: 75px;
+        top: 29px;
         z-index: 41;
         margin: 0;
     }
@@ -531,7 +531,7 @@ footer{
       height: 28px;
       position: fixed;
       top: 23px;
-      right: 40px;
+      right: 30px;
       margin-left: 40px;
       
       cursor: pointer;
@@ -551,7 +551,7 @@ footer{
       background:  #497abd;
       border-radius: 3px;
       top: 38px;
-      right: 40px;
+      right: 30px;
       z-index: 41;
       transform-origin: 4px 0px;
       
@@ -691,7 +691,7 @@ footer{
 
     .aboutinfo{
         width: 90%;
-        margin-left: 35px;
+        margin-left: 0;
         margin-top: 50px;
     }
 
