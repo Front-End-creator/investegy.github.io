@@ -284,6 +284,7 @@ button{
     width: 60%;
     height: auto;
     margin-top: 65px;
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 50%);
 }
 
 .photo{
