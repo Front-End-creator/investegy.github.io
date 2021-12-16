@@ -112,11 +112,11 @@ button{
 }
 
 #titleblock{
-    background-image: url(../image/mountain.jpg);
+    background-image: url("../image/mountain.webp");
     height: 800px;
     background-size: cover;
+    background-position: top;
 }
-
 
 #consultation{
     border-style: solid;
@@ -155,12 +155,14 @@ button{
     color: white;
     font-size: 26px;
     margin: 20px 0;
+    text-shadow: 3px 3px 2px rgb(0 0 0 / 50%);
 }
 
 #thesis h1{
     color: white;
     font-size: 60px;
     margin-bottom: 60px;
+    text-shadow: 5px 5px 3px rgb(0 0 0 / 50%);
 }
 
 #thesis li h2, #consultationblock h2{
@@ -181,6 +183,7 @@ button{
     padding: 10px 15px;
     transition: 0.5s;
     text-decoration: none;
+    text-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
 }
 
 #presentation:hover{
@@ -203,6 +206,11 @@ button{
     transition: 0.5s;
 }
 
+
+.requestinput:focus, .forminput:focus{
+    box-shadow: 0px 0px 5px 5px rgba(73, 121, 189, 0.5);
+}
+
 .requestinput{
     padding: 10px 10px 50px 10px;
     resize: none;
@@ -211,6 +219,7 @@ button{
     background-color: rgb(245, 245, 245);
     width: 80%;
     outline: 0;
+    transition: 0.5s;
 }
 
 .formbutt{
@@ -228,6 +237,7 @@ button{
 .formbutt:hover{
     cursor: pointer;
     background-color: #8bbbff;
+    transform: scale(1.04);
 }
 
 .text-error, .text-success, .text-error2, .text-success2{
@@ -265,6 +275,7 @@ button{
 
 .aboutinfo h1 {
     font-size: 2.3em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .aboutinfo h3{
     font-size: 1.5em
