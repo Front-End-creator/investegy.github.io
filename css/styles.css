@@ -158,23 +158,6 @@ button{
 }
 
 
-#presentation, #portfolio{
-    border-style: solid;
-    border-color: #529651;
-    background-color: #529651;
-    color:  white;
-    font-size: 24px;
-    padding: 10px 15px;
-    transition: 0.5s;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
-}
-
-#presentation:hover{
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .form{
     background-color: white;
     padding: 2.5%;
@@ -277,7 +260,7 @@ button{
 }
 
 .photo img{
-    width: 70%;
+    width: 62%;
     height: auto;
     margin-top: 65px;
     box-shadow: 0 0 10px 0px rgba(0 0 0 / 50%);
@@ -287,12 +270,6 @@ button{
     text-align: center;
 }
 
-
-#portfolio:hover, #portfolio_mob:hover{
-    background-color: white;
-    cursor: pointer;
-    color: #529651;
-}
 
 .attraction{
     width: 100%;
@@ -448,20 +425,6 @@ footer{
     display: none;
 }
 
-#portfolio_mob{
-    border-style: solid;
-    border-color: #529651;
-    background-color: #529651;
-    color:  white;
-    font-size: 25px;
-    padding: 20px 0;
-    margin: auto;
-    transition: 0.5s;
-    text-decoration: none;
-    width: 65%;
-    transform: translateY(-10px);
-    display: none;
-}
 
 
 @media (max-width: 1060px){
@@ -656,9 +619,6 @@ footer{
         left: 10%;
     }
 
-    #portfolio{
-        display: none;
-    }
 
     #titleblock{
         height: 1200px;
@@ -688,9 +648,6 @@ footer{
         width: 90%;
     }
 
-    #presentation, #portfolio{
-        font-size: 20px;
-    }
     
     #aboutus{
         justify-content: center;
@@ -757,12 +714,6 @@ footer{
     .attraction button{
         font-size: 18px;
     }
-
-    #portfolio_mob{
-        width: calc(100% - 2.4px);
-        display: block;
-    }
-
 }   
 
 @media (max-width: 720px){
@@ -792,16 +743,4 @@ footer{
         width: 100%;
     }
 
-}
-
-@media (max-width: 1500px) and (min-width: 1060px){
-    #portfolio_mob{
-        display: block;
-        width: 60%;
-        box-sizing: border-box;
-    }
-
-    #portfolio{
-        display: none;
-    }
 }
