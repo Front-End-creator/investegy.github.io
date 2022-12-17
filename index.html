@@ -23,13 +23,13 @@
 <body>
   <div id = "backlayer">
     <div id = "consultationblock">
-      <h2 class = "lang" key = "orderconsultation">ВАШ ПРОЕКТ</h2>
-      <input id = "name2 " class = "forminput placehold" key = "name" type = "text" placeholder="Ім'я"><br>
-      <input id = "email2" class = "forminput placehold" key = "email" type = "email" placeholder="Електронна пошта"><br>
-      <textarea id = "request2" class = "requestinput placehold" key = "request" type = "text" placeholder="Повідомлення"></textarea><br>
-      <button id = "submit_btn2" class = "formbutt lang" key = "formbutton">Надіслати</button>
-      <p class="text-error2 lang" key = "text-error">Одне з полів заповнене невірно. Перевірте та спробуйте заново.</p>
-      <p class="text-success2 lang" key = "text-success">Дякуємо за ваше звернення! Ваша заявка на консультацію надіслана.</p>
+      <h2>Order a consultation</h2>
+      <input id = "name2 " class = "forminput" type = "text" placeholder="Name"><br>
+      <input id = "email2" class = "forminput" type = "email" placeholder="Email"><br>
+      <textarea id = "request2" class = "requestinput" type = "text" placeholder="Request"></textarea><br>
+      <button id = "submit_btn2" class = "formbutt">Send</button>
+      <p class="text-error2">One or more fields have an error. Please check and try again.</p>
+      <p class="text-success2">Thank you for your message. It has been sent.</p>
     </div>
     <div id = "helperlayer"></div>
   </div>
@@ -40,14 +40,11 @@
                 <img style = "width: 280px;" src = "image/logo_green.png"> 
               </a>
             </li>
-              <li><a class = "ref lang" key = "home" href = "#titleblock">Головна</a></li>
-              <li><a class = "ref lang" key = "about" href = "#aboutus">Про нас</a></li>
-              <li><a class = "ref lang" key = "results" href = "#result">Результати</a></li>
-              <li><a class = "ref lang" key = "contacts" href = "#contacts">Контакти</a></li>
-              <li>
-                <a class="translate" id="en">ENG</a>
-                <a class="translate" id="ua">UA</a>
-              <li><button class = "lang" key = "consultation" id = "consultation">Зворотній зв'язок</button></li>
+              <li><a class = "ref" href = "#titleblock">Home Page</a></li>
+              <li><a class = "ref" href = "#aboutus">About Us</a></li>
+              <li><a class = "ref" href = "#result">Our Results</a></li>
+              <li><a class = "ref" href = "#contacts">Contacts</a></li>
+              <li><button id = "consultation">consultation</button></li>
           </ul>
   </div>
   <div id = "titleblock">
@@ -55,92 +52,85 @@
     <div id = "media">
       <div id="menuToggle">
         <img src ="image/logo_mob.png" alt ="logotype investegy">
-          <div id = "helplist">
-              <a class="translate" id="en">ENG</a>
-              <a class="translate" id="ua">UA</a>
-          </div>
         <input id ="checkbox" type="checkbox"/>
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
-          <li class = "List"><a class = "link lang" key = "home" href="#titleblock">Головна</a></li>
-          <li class = "List"><a class = "link lang" key = "about" href="#aboutus">Про нас</a></li>
-          <li class = "List"><a class = "link lang" key = "results" href="#result">Результати</a></li>
-          <li class = "List"><a class = "link lang" key = "contacts" href="#contacts">Контакти</a></li>
-          <li class = "List"><button class = "lang" id = "consultation" key = "consultation">Зворотній зв'язок</button></li>
+          <li class = "List"><a class = "link" href="#titleblock">Home Page</a></li>
+          <li class = "List"><a class = "link" href="#aboutus">About Us</a></li>
+          <li class = "List"><a class = "link" href="#result">Our Results</a></li>
+          <li class = "List"><a class = "link" href="#contacts">Contacts</a></li>
+          <li class = "List"><button id = "consultation">consultation</button></li>
         </ul>
       </div>
     </div>
     <ul id = "thesis">
       <li class = "listinfo">
-      <h4 class = "lang" key = "monetization">Надійність. Репутація.</h4>
-      <h1 class = "lang" key = "investment">Залучення інвестицій в Україну</h1>
-      <a  class = "lang" key = "downloadportfolio" target = "_blank" href = "files/Yaroslav Pylypchuk CV-1-3-UA.pdf" id = "presentation">Завантажити портфоліо</a>
+      <h4>Reliability. Reputation.</h4>
+      <h1>Investment Consulting Services in the EU and Ukraine</h1>
     </li>
     <li id = "orderconsultation">
-      <h2  class = "lang" key = "orderconsultation">ВАШ ПРОЕКТ</h2>
+      <h2>Order a consultation</h2>
       <div class = "form">
-        <input id = "name" class = "forminput placehold" key = "name" type = "text" placeholder="Ім'я"><br>
-        <input id = "email" class = "forminput placehold" key = "email" type = "email" placeholder="Електронна пошта"><br>
-        <textarea id = "request" class = "requestinput placehold" key = "request" type = "text" placeholder="Повідомлення"></textarea><br>
-        <button id = "submit_btn" class = "formbutt lang" key = "formbutton">Надіслати</button>
-        <p class="text-error lang" key = "text-error">Одне з полів заповнене невірно. Перевірте та спробуйте заново.</p>
-        <p class="text-success lang" key = "text-success">Дякуємо за ваше звернення! Ваша заявка на консультацію надіслана.</p>
+        <input id = "name" class = "forminput"  type = "text" placeholder="Name"><br>
+        <input id = "email" class = "forminput"  type = "email" placeholder="Email"><br>
+        <textarea id = "request" class = "requestinput" type = "text" placeholder="Request"></textarea><br>
+        <button id = "submit_btn" class = "formbutt">Send</button>
+        <p class="text-error">One or more fields have an error. Please check and try again.</p>
+        <p class="text-success">Thank you for your message. It has been sent.</p>
       </div>
     </li>
     </ul>
   </div>
   <div id = "aboutus">
     <section class = "aboutinfo">
-      <h1 class ="lang" key = "aboutinvestegy">Investegy використовує інсайти та інновації</h1>
-      <h3 class ="lang" key = "missions">Місія:</h3>
+      <h1>Investegy is a company that implements innovative consulting solutions</h1>
+      <h3>Our mission:</h3>
       <ul>
-        <li class ="lang" key = "mission1">Залучення інвестицій в IT, високотехнологічні, окупні проекти або соціальні ініціативи.</li>
+        <li>To create the first international Ukrainian investment consulting company that will be internationally acknowledged and will have an impeccable reputation</li>
       </ul>
-      <h3 class ="lang" key = "goals">Ціль:</h3>
+      <h3>Our goal:</h3>
       <ul>
-        <li class ="lang" key = "goal1">Суттєво підвищити рівень інвестиційного забезпечення IT, бізнесу, соціальних ініціатив в потужній Україні.</li>
+        <li>To change investment consulting level in Ukraine to the best and to create additional opportunities for realization of investment projects in Ukraine and in the world</li>
       </ul>
-      <h3 class ="lang" key = "values">Цінності:</h3>
+      <h3>Our value:</h3>
       <ul>
-        <li class ="lang" key = "value1">Надання професійних консалтингових послуг з детальною увагою до кожного клієнта;</li>
-        <li class ="lang" key = "value2">Надавати послуги стратегічного консалтингових рішень, які дозволять компаніям досягати максимальних результатів ефективності;</li>
-        <li class ="lang" key = "value3">Створити довготривалі партнерські стосунки між інвестором та бізнес експертами.</li>
+        <li>To be a provider of professional consulting services bringing the highest value to each client</li>
+        <li>To provide strategic consulting solutions that allow companies to perform their business goals efficiently</li>
+        <li>To create long-term interaction between investor and business experts</li>
       </ul>
-      <a  class ="lang langlink" key = "downloadportfolio" target = "_blank" href = "files/Yaroslav Pylypchuk CV-1-3-UA.pdf"  id = "portfolio" style = " position: relative; top: 30px; padding: 10px 20px;">Завантажити портфоліо</a>
+      <a target = "_blank" href = "files/Yaroslav Pylypchuk CV-1-3-UA.pdf"  id = "portfolio" style = " position: relative; top: 30px; padding: 10px 20px;">Download my potfolio</a>
   </section>
   <section class = "photo">
-    <img alt = "founder" src = "image/Yaroslav_Pylypchuk.png">
-    <a class ="lang langlink" key = "downloadportfolio" target = "_blank" href = "files/Yaroslav Pylypchuk CV-1-3-UA.pdf" id = "portfolio_mob">Завантажити портфоліо</a>
+    <img alt = "founder" src = "image/Yaroslav_Pylypchuk.jpg">
+    <a target = "_blank" href = "files/Yaroslav Pylypchuk CV-1-3-UA.pdf" id = "portfolio_mob">Download my potfolio</a>
   </section>
   </div>
   <div class = "attraction">
-    <p class ="lang" key = "attractionpar">Робити правильні речі в правильний час!</p>
-    <button class ="lang" key = "attractionbut">Розпочати</button>
+    <p>Doing the Right Thing, at the Right Time!</p>
+    <button>Get Started</button>
   </div>
   <div id = "result">
-    <h3 class ="lang" key = "result1">Компанія здатна створити продукт, який забезпечить успіх клієнтам.</h3>
-    <h2 class ="lang" key = "result2">
-      Досвід в розробці міжнародних проектів.
-    </h2>
-    <p class ="lang" key = "resultinfo" id = "resultinfo">Investegy має успішні Success Story в залученні інвестицій. Ми постійно підвищуємо свої Soft та Hard skills, щоб бути готовими до нових челенджів.</p>
+    <h3>The result of Investegy’s capabilities are the products that do, success of our customers and company’s analyst</h3>
+    <h2>Background of global projects</h2>
+    <p id = "resultinfo">Investegy has experience in investment intelligence and consulting of large investment projects. In doing so, we are learning, transforming and being open to solving new challenges every day</p>
     <ul id = "resultlist">
-      <li style = "max-height: 270px; color: #529651; background-color:  white;"><img src = "image/Iconblue_green.png" alt = "icon"><p class = "num">10+</p><br><p class = "text lang" key = "firstinfo">Створених Стратегій на базі інсайтів.</p></li>
-      <li style = "color: white; background-color:  #529651;"><img src = "image/icon.png" alt = "icon"><p class = "num">$50</p><br><p class = "text brlang" key = "secondinfo">мільйонів<br>Обсяг залучених інвестицій.</p></li>
-      <li style = "max-height: 270px; color: #529651; background-color:  white;"><img src = "image/Iconblue_green.png" alt = "icon"><p class = "num">100+</p><br><p class = "text lang" key = "thirdinfo">Розроблених інвестиційних пропозицій.</p></li>
+      <li style = "max-height: 270px; color: #529651; background-color:  white;"><img src = "image/Iconblue_green.png" alt = "icon"><p class = "num">5+</p><br><p class = "text">Created Strategies and Transformation Projects</p></li>
+      <li style = "color: white; background-color:  #529651;"><img src = "image/icon.png" alt = "icon"><p class = "info-header">more then</p><p class = "num num-middle">5</p><p class = "text">success stories as PM, BA, analytic</p></li>
+      <li style = "max-height: 270px; color: #529651; background-color:  white;"><img src = "image/Iconblue_green.png" alt = "icon"><p class = "num">50+</p><br><p class = "text">Developed financial Models</p></li>
     </ul>
   </div>
   <div style = "margin-top: 180px;" class = "attraction">
-    <p class ="lang" key = "attractionpar">Робити правильні речі в правильний час!</p>
-    <button class ="lang" key = "attractionbut">Розпочати</button>
+    <p>Doing the Right Thing, at the Right Time!</p>
+    <button>Get Started</button>
   </div>
   <div id = "contacts">
       <img src = "image/logo_white.png" alt = "logo">
       <a target = "_blank" href = "https://www.facebook.com/yaroslav.pylypchuk.1"><img style = "width: 60px;" src = "image/facebook.png" alt = "facebook"></a>
   </div>
   <footer>
-    © 2021 Investegy. All Rights Reserved.
+    © 2021-2022 Investegy. All Rights Reserved.
   </footer>
 </body>
 <script src="javascript/scripts.js"></script>

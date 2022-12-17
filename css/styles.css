@@ -25,6 +25,13 @@ button{
     width: 27%;
 }
 
+.info-header{
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+
+
 #navlist{
     display: flex;
     justify-content: space-around;
@@ -125,6 +132,7 @@ button{
 }
 .listinfo{
     width: 65%;
+    margin: auto;
 }
 
 #thesis h4{
@@ -245,8 +253,8 @@ button{
 }
 
 .aboutinfo{
-    width: 50%;
-    margin-left: 150px;
+    width: 60%;
+    margin-left: 120px;
     margin-top: 50px;
 }
 
@@ -269,7 +277,7 @@ button{
 }
 
 .photo img{
-    width: 60%;
+    width: 70%;
     height: auto;
     margin-top: 65px;
     box-shadow: 0 0 10px 0px rgba(0 0 0 / 50%);
@@ -372,6 +380,10 @@ button{
     font-size: 90px;
     margin: 0;
     padding-top: 30px;
+}
+
+#resultlist li .num-middle{
+    padding-top: 0;
 }
 
 #resultlist li .text{
