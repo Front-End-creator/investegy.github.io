@@ -18,11 +18,11 @@ $(document).ready(function(){
         $("#checkbox").prop("checked", false);
     });
     $("#consultation, .attraction button").on("click", function () {
-        $('#backlayer').show("fast");
+        $('#backlayer').addClass("visible");
         $('body').css("overflow", "hidden");
     });
     $("#helperlayer").on("click", function () {
-        $('#backlayer').hide("fast");
+        $('#backlayer').removeClass("visible");
         $('body').css("overflow", "visible");
     });
 });
